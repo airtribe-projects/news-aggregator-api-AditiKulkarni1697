@@ -4,6 +4,6 @@ const {createUser} = require("../controllers/user.controller");
 const { validateTask } = require("../middleware/validateuser.middleware");
 
 userRouter
-.post("/",validateTask, createUser);
+.post("/signup",validateTask, createUser);
 
 module.exports = {userRouter}
